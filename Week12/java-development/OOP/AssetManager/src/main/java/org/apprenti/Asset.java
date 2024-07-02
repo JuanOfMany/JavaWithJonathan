@@ -1,7 +1,5 @@
 package org.apprenti;
 
-import java.util.Optional;
-
 public abstract class Asset {
     private String description;
     private String dateAcquired;
@@ -37,7 +35,5 @@ public abstract class Asset {
         this.originalCost = originalCost;
     }
 
-    public double getValue() {
-        return getOriginalCost();
-    }
+    public abstract double getValue();
 }

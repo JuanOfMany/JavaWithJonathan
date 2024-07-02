@@ -33,7 +33,7 @@ public class House extends Asset{
         }
         double lotSizeAdjustment = this.getLotSize() * 0.25d;
 
-        return (perSquareFoot * this.getSquareFoot()) + lotSizeAdjustment;
+        return (perSquareFoot * getSquareFoot()) + lotSizeAdjustment;
     }
 
     public int getLotSize() {

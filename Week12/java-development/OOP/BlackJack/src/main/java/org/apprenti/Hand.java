@@ -4,15 +4,18 @@ import java.util.Collections;
 import java.util.Comparator;
 
 public class Hand {
-    ArrayList<Card> cards;
+    private ArrayList<Card> cards;
 
     public Hand(ArrayList<Card> cards) {
         this.cards = cards;
     }
 
-    Card deal(Card card) {
+    public Hand() {
+        this.cards = new ArrayList<Card>();
+    }
+
+    void draw(Card card) {
         this.cards.add(card);
-        return card;
     };
 
     int getSize() {

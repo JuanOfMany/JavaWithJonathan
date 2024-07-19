@@ -1,0 +1,25 @@
+Instructions:
+
+    Create a Class:
+        Create a class named Person.
+        This class should have three private fields: name (String), age (int), and email (String).
+
+    Generate Constructor:
+        Create a constructor that initializes all three fields.
+
+    Implement Getter and Setter Methods:
+        Create public getter and setter methods for each of the private fields.
+
+    Add Validation in Setters:
+        Add basic validation in the setter methods:
+            setName should not accept null or empty strings.
+            setAge should not accept negative values.
+            setEmail should not accept null or empty strings and should contain an @ character.
+
+    Test the Class:
+
+         Write a main method to test the Person class. Create an instance of Person and demonstrate the use of getter and setter methods, including the validation logic.
+
+    HINT - Java allows us to throw exceptions when we want. 
+           For example throw new IllegalArgumentException("Age cannot be a negative value") would be the syntax.
+     
